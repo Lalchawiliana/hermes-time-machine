@@ -1,0 +1,21 @@
+# Draft only — REPLACE placeholders after a real GitHub commit. Do not submit as-is.
+name: hermes-time-machine
+repo: https://github.com/REPLACE_OWNER/hermes-time-machine
+sha: REPLACE_WITH_REAL_40_CHARACTER_GIT_COMMIT
+version: "0.1.0"
+description: Docker-isolated terminal middleware, checkpoint-based workspace recovery, and a native Desktop timeline. Requires Docker and a dedicated workspace.
+maintainer: REPLACE_OWNER
+tier: community
+category: desktop
+capabilities:
+  tools:
+    - time_machine_checkpoint
+    - time_machine_status
+    - time_machine_note
+    - time_machine_restore
+  hooks:
+    - pre_llm_call
+  middleware:
+    - tool_execution
+  requires_env:
+    - HERMES_TIMEMACHINE_WORKSPACE
