@@ -1,0 +1,16 @@
+name: hermes-time-machine
+version: 0.1.0
+manifest_version: 2
+api_version: 1
+description: Docker-isolated terminal execution, content-addressed file checkpoints, and a native Desktop recovery timeline.
+license: MIT
+tags: [safety, developer-tools, desktop, execution, memory]
+provides_tools:
+  - time_machine_checkpoint
+  - time_machine_status
+  - time_machine_note
+  - time_machine_restore
+provides_hooks:
+  - pre_llm_call
+requires_env:
+  - HERMES_TIMEMACHINE_WORKSPACE
